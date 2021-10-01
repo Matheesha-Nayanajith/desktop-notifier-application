@@ -9,3 +9,10 @@ except:
 if (covidData != None):
     #converting data into JSON format
     data = covidData.json()['Success']
+    
+#repeating the loop for multiple times
+    while(True):
+        notification.notify(
+            #title of the notification,
+            title = "COVID19 Stats on {}".format(datetime.date.today()),
+    
