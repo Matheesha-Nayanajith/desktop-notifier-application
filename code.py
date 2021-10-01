@@ -6,4 +6,6 @@ except:
     #if the data is not fetched due to lack of internet
     print("Please! Check your internet connection")
 
-    
+if (covidData != None):
+    #converting data into JSON format
+    data = covidData.json()['Success']
