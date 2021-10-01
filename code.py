@@ -22,4 +22,9 @@ if (covidData != None):
             todaycases = data['todayCases'],
             todaydeaths = data['todayDeaths'],
             active = data["active"]),
-    
+
+    #creating icon for the notification
+            #we need to download a icon of ico file format
+            app_icon = "Paomedia-Small-N-Flat-Bell.ico",
+            # the notification stays for 50sec
+            timeout  = 50
