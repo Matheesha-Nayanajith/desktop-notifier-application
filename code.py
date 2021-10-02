@@ -28,3 +28,7 @@ if (covidData != None):
             app_icon = "Paomedia-Small-N-Flat-Bell.ico",
             # the notification stays for 50sec
             timeout  = 50
+)
+        #sleep for 4 hrs => 60*60*4 sec
+        #notification repeats after every 4hrs
+        time.sleep(60*60*4)
