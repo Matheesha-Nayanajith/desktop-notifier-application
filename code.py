@@ -4,16 +4,19 @@ try:
     covidData = requests.get("https://corona-rest-api.herokuapp.com/Api/india")
 except:
     #if the data is not fetched due to lack of internet
+    #reporting data
     print("Please! Check your internet connection")
 
 if (covidData != None):
     #converting data into JSON format
+    #converting part
     data = covidData.json()['Success']
     
 #repeating the loop for multiple times
     while(True):
         notification.notify(
             #title of the notification,
+            #notification adding
             title = "COVID19 Stats on {}".format(datetime.date.today()),
 
 #the body of the notification
