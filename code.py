@@ -28,7 +28,7 @@ if (covidData != None):
 
     #creating icon for the notification
             #we need to download a icon of ico file format
-            app_icon = "Paomedia-Small-N-Flat-Bell.ico",
+            app_icon = "Blacksugar-New-Year-Flat-Bell.ico",
             # the notification stays for 50sec
             timeout  = 50
 )
